@@ -1,7 +1,7 @@
 - id: uv-bump-version
   name: uv-bump-version
   description: "Automatically run 'uv version --bump patch' on your project if version is stale"
-  entry: bump_version_if_needed.py
+  entry: uv_bump_version.py
   language: python
   types: [toml]
   files: ^pyproject\.toml$

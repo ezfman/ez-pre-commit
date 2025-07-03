@@ -1,7 +1,12 @@
-- id: bump-version-if-needed
-  name: Bump version with uv if not already bumped
+- id: uv-bump-version
+  name: uv-bump-version
+  description: "Automatically run 'uv version --bump patch' on your project if version is stale"
   entry: bump_version_if_needed.py
   language: python
   types: [toml]
   files: ^pyproject\.toml$
+  args: []
+  pass_filenames: false
+  additional_dependencies: []
   # additional_dependencies: [tomli]  # Only needed for Python <3.11
+  minimum_pre_commit_version: "2.9.2"

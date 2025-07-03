@@ -39,7 +39,3 @@ def main():
         print(f"Version bumped already: {head_version} → {current_version}")
 
     return 0
-
-
-if __name__ == "__main__":
-    sys.exit(main())
